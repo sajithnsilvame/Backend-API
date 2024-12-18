@@ -8,7 +8,8 @@
     "start": "node dist/server.js",
     "build": "tsc",
     "test": "npm run test",
-    "swagger:gen": "npx swagger-autogen ./swagger-output.json ./src/routes/index.ts"
+    "swagger:gen": "npx swagger-autogen ./swagger-output.json ./src/routes/index.ts",
+    "db:migrate": "sequelize-cli db:migrate --config src/config/config.ts"
   },
   "keywords": [
     "rest",
